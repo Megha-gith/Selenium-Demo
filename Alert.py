@@ -25,3 +25,11 @@ atr.accept()
 
 # To Close the POP_UP window
 #atr.dismiss()
+
+handel = driver.window_handles
+
+#More than one window handle for
+
+for h in handel:
+    driver.switch_to.window(h)
+    print(driver.title)
