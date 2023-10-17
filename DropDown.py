@@ -29,3 +29,9 @@ all1=drop1.options
 for opt1 in all1:
     print(opt1)
 
+# Locator Id
+driver.find_element(By.ID,'ta1').send_keys("This is sample text in the page")
+time.sleep(3)
+driver.find_element(By.XPATH,"//select[@id='drop1']").click()
+time.sleep(3)
+
