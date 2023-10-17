@@ -32,4 +32,33 @@ else:
 time.sleep(3)
 
 
+# Alert Button
+driver.get("https://demo.automationtesting.in/Alerts.html")
+
+# driver.find_element(By.XPATH,"//a [@aria-expanded='true']").click()
+# driver.find_element(By.XPATH,"//button[@class='btn btn-danger']").click()
+# time.sleep(3)
+# atr = driver.switch_to.alert
+# atr.accept()
+
+driver.find_element(By.XPATH,"/html/body/div[1]/div/div/div/div[1]/ul/li[2]/a").click()
+driver.find_element(By.XPATH, "//button[@class='btn btn-primary']").click()
+time.sleep(2)
+
+# To Accept the POP_UP window
+atr = driver.switch_to.alert
+atr.accept()
+
+# To Close the POP_UP window
+#atr.dismiss()
+
+handel = driver.window_handles
+
+#More than one window handle for
+
+for h in handel:
+    driver.switch_to.window(h)
+    print(driver.title)
+
+
 
