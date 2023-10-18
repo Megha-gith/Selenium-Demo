@@ -1,8 +1,15 @@
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+# Assigning different operation results to multiple variable.
 
+a, b = 8, 3
+add, pro = (a+b), (a*b)
+print(add)
+print(pro)
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+# different characters in a different variables.
+
+string = "Geeks"
+a, b, c = string[0], string[1:4], string[4]
+
+print(a)
+print(b)
+print(c)
